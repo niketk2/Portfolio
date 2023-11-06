@@ -10,7 +10,7 @@ pipeline {
                     doGenerateSubmoduleConfigurations: false, 
                     extensions: [], 
                     submoduleCfg: [], 
-                    userRemoteConfigs: [[url: 'https://github.com/niketk2/website-master.git']]
+                    userRemoteConfigs: [[url: 'https://github.com/niketk2/Portfolio.git']]
                 ])
             }
         }
@@ -19,7 +19,7 @@ pipeline {
             steps {
                 // Copy the code to the Apache document root directory
                 bat script: '''
-                    xcopy /s /e /y ""C:\\Users\\Ms\\Desktop\\website-master"" "C:\\Apache24\\htdocs"
+                    xcopy /s /e /y ""D:\Manit MCA\Semester 2\Web dev Assignment\Responsive Portfolio Website\Responsive Portfolio Website"" "C:\\Apache24\\htdocs"
                 '''
             }
         }
